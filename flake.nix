@@ -32,17 +32,17 @@
       };
       nativeBuildInputs = [ pkgs.python312Packages.setuptools ];
       buildInputs = with pkgs.python312Packages; [
-        numpy
-		    scipy
-		    torch
-  	  	psutil
-	    	pandas
-    		seaborn
-		    py-cpuinfo
-		    torchvision
-    		tqdm
-		    requests
-		    opencv4
+        		numpy
+			scipy
+			torch
+  	  		psutil
+	    		pandas
+    			seaborn
+		    	py-cpuinfo
+		    	torchvision
+    			tqdm
+			requests
+			opencv4
 	  ] ++ [ ultralyticsThop ];
 
   	# Patch to remove the strict version requirements that cause problems.
@@ -67,6 +67,7 @@ mireapython = pkgs.python3.withPackages (ps: with ps; [
 		tqdm
 		beautifulsoup4
 		cytoolz
+		psutil
 		pandas
 		requests
 		seaborn
