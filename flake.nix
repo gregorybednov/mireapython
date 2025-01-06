@@ -58,20 +58,29 @@
 
 mireapython = pkgs.python3.withPackages (ps: with ps; [
 		numpy
-		scipy
+		scipy 
+		torch
+		psutil # idk why but flakes doesn't take it into the general python installation, so i copied it from the above
+		pandas
+		seaborn
+		py-cpuinfo
+	    	torchvision
+		tqdm
+		requests
+		opencv4
+
 		matplotlib
 		pillow
+		
 		colorama
 		simplejson
 		python-dateutil
-		tqdm
+		
 		beautifulsoup4
 		cytoolz
-		psutil
-		pandas
-		requests
-		seaborn
-		opencv4
+		
+		
+		
 		django
 		django-multiselectfield
 		sorl-thumbnail
