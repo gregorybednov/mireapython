@@ -43,6 +43,7 @@
     			tqdm
 			requests
 			opencv4
+			streamlit
 	  ] ++ [ ultralyticsThop ];
 
   	# Patch to remove the strict version requirements that cause problems.
@@ -68,6 +69,7 @@ mireapython = pkgs.python3.withPackages (ps: with ps; [
 		tqdm
 		requests
 		opencv4
+		streamlit
 
 		matplotlib
 		pillow
