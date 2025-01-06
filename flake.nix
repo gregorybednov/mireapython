@@ -80,7 +80,7 @@ mireapython = pkgs.python3.withPackages (ps: with ps; [
 		django-annoying
 		django-simple-captcha
 		ultralytics
-	]));
+	]);
 
   in {
       packages.x86_64-linux.mireapython = mireapython;
