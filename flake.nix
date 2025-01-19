@@ -97,6 +97,6 @@ mireapython = pkgs.python3.withPackages (ps: with ps; [
   in {
       packages.x86_64-linux.mireapython = mireapython;
       defaultPackage.x86_64-linux = mireapython;
-      hydraJobs.default = self.packages.x86_64-linux.default;
+      hydraJobs.default = self.packages.x86_64-linux.mireapython;
     };
 }
